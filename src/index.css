@@ -1,0 +1,176 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body and background */
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+header nav ul li {
+  margin-right: 30px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #61dafb;
+}
+
+/* Main content */
+h1, h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #61dafb;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4fa3f7;
+}
+
+/* Flexbox layout for the content */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card style for lists like team members or projects */
+.card {
+  background-color: #fff;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40rem;
+  margin-left: 25rem;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.card ul li {
+  background-color: #f4f4f4;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+/* Button and list hover effects */
+button:focus,
+button:active {
+  outline: none;
+}
+
+.card li:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.card button {
+  margin-top: 10px;
+  background-color: #4fa3f7;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #61dafb;
+}
