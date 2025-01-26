@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../index.css'; 
 
 const ProjectListing = () => {
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     { name: 'Hackathon 2025', description: 'Build the future of AI' },
     { name: 'WebDev Challenge', description: 'Create a full-stack app' },
   ]);
